@@ -4,6 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 //import 'package:country_code_picker/country_code_picker.dart';
 import 'package:country_pickers/country_pickers.dart';
+
+import 'Custom_button.dart';
 class login_screen extends StatefulWidget {
   const login_screen({Key? key}) : super(key: key);
 
@@ -94,23 +96,25 @@ class _login_screenState extends State<login_screen> {
                   right: 20,
                   top: 20
                 ),
-                child: Container(
-                  width: double.infinity,
-                  child: MaterialButton(
-                    onPressed: () async {
+                child:  Container(
+                  height: 65,
+                  child: CustomButton(
+
+                    onTap: () {
 
                     },
-                    child: const Text(
-                      "Sign In",
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
-                    ),
+
+                    buttonText: 'Sign In',
+
+                    textColor: Colors.white,
+
+                    borderRadius: 15,
+
+                    buttonColor: Colors.blue,
+
+                    borderColor: Colors.white,
+
                   ),
-                  decoration: BoxDecoration(
-                      color: Colors.blue[500],
-                      borderRadius:
-                      BorderRadius.all(const Radius.circular(25.0))),
                 ),
               ), //login btn
               const  Text('or',
@@ -121,36 +125,34 @@ class _login_screenState extends State<login_screen> {
                     decoration: TextDecoration.none,
                     fontSize: 15,
                   ),),
-
               Padding(
                 padding: const EdgeInsets.only(
                     left: 20,
                     right: 20,
                     top: 20
                 ),
-                child: Container(
-                  width: double.infinity,
-                  child: MaterialButton(
+                child:  Container(
+                  height: 60,
+                  child: CustomButton(
 
-                    onPressed: () async {
+                    onTap: () {
 
                     },
-                    child: const Text(
-                      "Sign with by google",
-                      style: TextStyle(
-                      //  color: Colors.white,
-                      ),
-                    ),
+
+                    buttonText: 'Sign with by google',
+
+                    textColor: Colors.black,
+
+                    borderRadius: 15,
+
+                    buttonColor: Colors.white,
+
+                    borderColor: Colors.blue,
+
                   ),
-
-                  decoration: const BoxDecoration(
-                      color: Colors.white,
-
-
-                      borderRadius:
-                      BorderRadius.all(Radius.circular(25.0)),),
                 ),
               ), //login btn
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

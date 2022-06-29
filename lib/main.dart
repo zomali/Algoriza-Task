@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 
        // primarySwatch: Colors.blue,
       ),
-      home:   on_boarding_page(),
+      home:   register_screen(),
     );
   }
 }
